@@ -1,0 +1,16 @@
+div{
+height: 50px;
+border-style: solid;
+
+}
+
+img{
+	height:40px;
+	float: left;
+	border-radius: 100%;
+}
+
+.status{
+	float: right;
+}
+

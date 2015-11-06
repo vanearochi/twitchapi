@@ -1,0 +1,2 @@
+- Create an ajax for each user provided
+- If streaming you get a complete new Object with info  of the channel if not null
