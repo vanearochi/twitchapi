@@ -1,16 +1,49 @@
-div{
-height: 50px;
+
+
+.streamers{
 border-style: solid;
+width: 50%;
+margin: 0 auto;
+
+
 
 }
 
 img{
 	height:40px;
-	float: left;
+	//display:inline-block;
 	border-radius: 100%;
+	margin: 3% 3% 0 1%;
 }
 
-.status{
-	float: right;
+
+.userName{
+	//border-style: solid;
+	width: 30%;
+	//border-color: red;
+	margin-left: 3%;
+	display:inline-block;
 }
+
+.online{
+	border-radius: 100%;
+	border-color: green;
+	border-style: solid;
+	background-color: green;
+	display:inline-block;
+}
+
+.offline{
+	border-radius: 100%;
+	border-color: red;
+	border-style: solid;
+	background-color: green;
+	display:inline-block;
+}
+
+.bio{
+	//width: 10%;
+
+}
+
 
