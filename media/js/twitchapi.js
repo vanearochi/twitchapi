@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+
+
 	console.log("Welcome to twitchapi by Vane")
 	var users = ["freecodecamp", "storbeck", "terakilobyte", "habathcx","RobotCaleb","thomasballinger","noobs2ninjas","beohoff","medrybw"];
 	html=""
@@ -8,6 +10,35 @@ $(document).ready(function(){
 	// 	display(json.name, json.logo, json.display_name, json.bio)
 
 	// }
+
+	var search = function(the_term){
+		console.log("Searching for "+the_term);
+		if (users.indexOf(the_term)>=0){
+			$(".x").hide()
+			$("."+the_term).show()
+			console.log("bla")
+
+
+		}
+	}
+
+
+	var go_search_handler = function(event){
+		var search_input = $(".search-input");
+		var the_term = search_input.val();
+		search(the_term); 
+
+	}
+	
+	var initEvents = function(){
+		var search_button = $(".search-button");
+		search_button.on("click",go_search_handler);
+
+		var search_input = $(".search-input");
+		search_input.on("keyup",go_search_handler);		
+	}
+
+	initEvents();
 
 	var userInfo = function(arr){
 
@@ -35,7 +66,7 @@ $(document).ready(function(){
 
 	};
 
-	userInfo(users)
+	userInfo(users);
 
 	var status = function(userName, userBio, logo, displayName){
 		//console.log("test2"+userName)
@@ -62,9 +93,11 @@ $(document).ready(function(){
 
 
 	};
-	
 
-	// 
+
+   var x=  document.getElementById("<&=form-control.ClientID %>");
+   console.log(x)
+	
 
 	// var displayUserData = function(userName, logo, displayName){
 	// 	if(logo===null){
@@ -108,7 +141,7 @@ $(document).ready(function(){
 
 	}
 
-	var search = function(){}
+	
 	
 	
 
