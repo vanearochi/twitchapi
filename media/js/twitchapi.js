@@ -77,23 +77,38 @@ $(document).ready(function(){
 
 	// }
 
-	var displayStatus = function(status,userName,bio, logo, displayName){
-		if(status===null){
-			$("."+userName).html("<img src="+logo+">"+"<div class='userName'><a href='http://www.twitch.tv/"+userName+"/profile'>"+displayName+"</a></div>"+"<div class='offline'></div>")
-			$("."+userName+"2").html("<img src="+logo+">"+"<div class='userName'><a href='http://www.twitch.tv/"+userName+"/profile'>"+displayName+"</a></div>"+"<div class='offline'></div>")
-		}
-		else{
-			$("."+userName).html("<img src="+logo+">"+"<p>"+displayName+"</p>"+"<div class=bio>"+bio+"</div>"+"<div class='online'></div>")
-			$("."+userName+"1").html("<img src="+logo+">"+"<p>"+displayName+"</p>"+"<div class='online'></div>"+"<div class=bio>"+bio+"</div>")
-		}
-	}
+	// var displayStatus = function(status,userName,bio, logo, displayName){
+	// 	if(status===null){
+	// 		$("."+userName).html("<img src="+logo+">"+"<div class='userName'><a href='http://www.twitch.tv/"+userName+"/profile'>"+displayName+"</a></div>"+"<div class='offline'></div>")
+	// 		$("."+userName+"2").html("<img src="+logo+">"+"<div class='userName'><a href='http://www.twitch.tv/"+userName+"/profile'>"+displayName+"</a></div>"+"<div class='offline'></div>")
+	// 	}
+	// 	else{
+	// 		$("."+userName).html("<img src="+logo+">"+"<p>"+displayName+"</p>"+"<div class=bio>"+bio+"</div>"+"<div class='online'></div>")
+	// 		$("."+userName+"1").html("<img src="+logo+">"+"<p>"+displayName+"</p>"+"<div class='online'></div>"+"<div class=bio>"+bio+"</div>")
+	// 	}
+	// }
 
 	
 		// $(".all").on("click", function(){
 		//  	$("."+).html("<a href='http://www.twitch.tv/terakilobyte/profile'></a>")
 		//  });
 
-	
+	var displayStatus = function(status,userName,bio, logo, displayName){
+		if(status===null){
+			$("."+userName).html("<div class=' col-xs-1 '><img class='logo' src="+logo+ "></div>"+"<div class='userName col-xs-6 col-xs-offset-1'><a href='http://www.twitch.tv/"+userName+"/profile'>"+displayName+"</a></div>"+"<div class='col-xs-2 col-xs-offset-1'><div class='glyphicon glyphicon-exclamation-sign'</div></div>")//"<img src="+logo+">"+"<div class='userName'><a href='http://www.twitch.tv/"+userName+"/profile'>"+displayName+"</a></div>"+"<div class='offline'></div>")
+			$("."+userName+"2").html("<div class=' col-xs-1 '><img class='logo' src="+logo+ "></div>"+"<div class='userName col-xs-6 col-xs-offset-1'><a href='http://www.twitch.tv/"+userName+"/profile'>"+displayName+"</a></div>"+"<div class='col-xs-2 col-xs-offset-1'><div class='glyphicon glyphicon-exclamation-sign'</div></div>")
+			}
+		
+		else{
+			$("."+userName).html("<div class='col-xs-1' ><img class='logo'src="+logo+"></div>"+"<div class='userName col-xs-6 col-xs-offset-1'><a href='http://www.twitch.tv/"+userName+"/profile'>"+displayName+"</a><div class=bio>"+bio+"</div></div>"+"<div class='col-xs-2 col-xs-offset-1'><div class='glyphicon glyphicon-ok'</div></div>")//"<img src="+logo+">"+"<p>"+displayName+"</p>"+"<div class='online'></div>"+"<div class=bio>"+bio+"</div>")
+			$("."+userName+"1").html("<div class='col-xs-1' ><img class='logo'src="+logo+"></div>"+"<div class='userName col-xs-6 col-xs-offset-1'><a href='http://www.twitch.tv/"+userName+"/profile'>"+displayName+"</a><div class=bio>"+bio+"</div></div>"+"<div class='col-xs-2 col-xs-offset-1'><div class='glyphicon glyphicon-ok'</div></div>")
+
+			//"<p>"+displayName+"</p>"+"<div class='online'></div>"+"<div class=bio>"+bio+"</div>")
+		}
+
+	}
+
+	var search = function(){}
 	
 	
 

@@ -1,9 +1,14 @@
 
-
+body{
+	background-color: #e1e3e4;
+	font-family: 'Raleway', sans-serif;
+}
 .streamers{
-border-style: solid;
-width: 50%;
-margin: 0 auto;
+
+width: 30%;
+margin: 20px auto;
+background-color:#f4f4f4;
+
 
 
 
@@ -14,15 +19,15 @@ img{
 	//display:inline-block;
 	border-radius: 100%;
 	margin: 3% 3% 0 1%;
+	
 }
 
 
 .userName{
-	//border-style: solid;
-	width: 30%;
-	//border-color: red;
-	margin-left: 3%;
-	display:inline-block;
+	
+	
+	text-align: left;
+
 }
 
 .online{
@@ -30,19 +35,51 @@ img{
 	border-color: green;
 	border-style: solid;
 	background-color: green;
-	display:inline-block;
+	
 }
 
-.offline{
-	border-radius: 100%;
-	border-color: red;
-	border-style: solid;
-	background-color: green;
-	display:inline-block;
+.glyphicon-exclamation-sign{
+	color:rgb(230, 39, 57);
+	
+
 }
+
+.glyphicon-ok{
+	color:#1A99AA;
+	
+
+}
+
+
+.logo{
+	padding-left: 5%;
+	
+	background-color: gray
+
+}
+
+.row{
+	margin: 1% 0;
+}
+
 
 .bio{
-	//width: 10%;
+	color:#a6abab;;
+}
+
+a{
+	text-decoration: none;
+	color: black
+}
+li a{
+	text-decoration: none;
+	color:white;
+
+}
+
+.nav{
+	background-color: #3c948b;
+
 
 }
 
