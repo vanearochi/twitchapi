@@ -30,13 +30,7 @@ img{
 
 }
 
-.online{
-	border-radius: 100%;
-	border-color: green;
-	border-style: solid;
-	background-color: green;
-	
-}
+
 
 .glyphicon-exclamation-sign{
 	color:rgb(230, 39, 57);
@@ -81,6 +75,10 @@ li a{
 	background-color: #3c948b;
 
 
+}
+.container{
+
+	width:100%;
 }
 
 
